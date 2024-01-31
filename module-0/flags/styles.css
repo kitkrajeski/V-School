@@ -1,0 +1,40 @@
+.french-flag-1 {
+    background-color: #002495;
+    height: 200px;
+    width: 100px;
+    display: inline-block;
+}
+.french-flag-2 {
+    background-color: #FFFFFF;
+    height: 200px;
+    width: 100px;
+    display: inline-block;  
+}
+.french-flag-3 {
+    background-color: #ED2938;
+    height: 200px;
+    width: 100px;
+    display: inline-block;
+}
+.german-1 {
+    background-color: #000000;
+    height: 66px;
+    width: 300px;
+}
+.german-2 {
+    background-color: #DE0002;
+    height: 66px;
+    width: 300px;
+}
+.german-3 {
+    background-color: #FFCE00;
+    height: 66px;
+    width: 300px;
+}
+.madagascar-1 {
+    background-color: #FFFFFF;
+    height: 200px;
+    width: 100px;
+    display: inline-block;
+    
+}

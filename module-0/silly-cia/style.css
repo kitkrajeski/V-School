@@ -1,0 +1,30 @@
+body {
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.title {
+   font-family: "Georgia";
+   text-align: center; 
+}
+.title h2 {
+    color: green;
+}
+.text-container {
+    line-height: 25px;
+    overflow: hidden;
+}
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+.image-container {
+    float: left;
+    margin-right: 20px;
+}
+.footer {
+    text-align: left;
+    margin-top: 24px;
+}
+a {
+    text-decoration: none;
+}

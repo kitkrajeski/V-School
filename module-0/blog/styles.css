@@ -1,0 +1,44 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    margin: 10px;
+    background-color: rgb(55,44,22,.4);
+    color: #DCC628;
+}
+.post-1 {
+    position: relative;
+    margin-top: 50px;
+}
+.post-1 img {
+    width: 200px;
+    float: left;
+}
+.post-1 h4 {
+    position: absolute;
+    margin-left: 225px;
+}
+.post-1 p {
+    position: absolute;
+    margin-left: 225px;
+    margin-top: 50px;
+}
+.post-2 {
+    clear: both;
+    position: relative;
+}
+.post-2 img {
+    width: 200px;
+    float: left;
+    margin-top: 25px;
+}
+.post-2 h4 {
+    position: absolute;
+    margin-left: 225px;
+    margin-top: 50px;
+}
+.post-2 p {
+    position: absolute;
+    margin-left: 225px;
+    margin-top: 75px;
+}
+

@@ -9,7 +9,7 @@ Check out the key and keyCode property of `e.target` */
 var box = document.querySelector("#myBox");
 
 function changeRed() {
-    box.style.backgroundColor = "red"
+    box.style.backgroundColor = "red";
 }
 box.addEventListener("mousedown", changeRed);
 function changeYellow() {
@@ -38,5 +38,11 @@ function changeColor(event) {
     }
 }
 
-box.addEventListener("keydown", changeColor);
+function keyTest(event) {
+    var pressedKey = event.key.toLowerCase();
+    if (pressedKey === "u") {
+        box.style.backgroundColor = "pink";
+    }
+}
 
+box.addEventListener("keydown", keyTest);

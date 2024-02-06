@@ -15,6 +15,8 @@ function incrementCounter() {
     }
 }
 console.log(incrementCounter())
+var header = document.querySelector("h1");
+console.log(Object.keys(header.style))
 var person = {
     name: "Bobby",
     age: 12,

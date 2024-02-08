@@ -27,7 +27,6 @@ function changeOrange() {
 box.addEventListener("mouseleave", changeOrange);
 
 function changeColor(event) {
-    console.log(event.key)
     if (event.key === "r") {
         box.style.backgroundColor = "red";
     } else if (event.key === "y") {
@@ -39,9 +38,6 @@ function changeColor(event) {
     }
 }
 
-function keyTest(event) {
-   console.log(event);
-   
-}
-
 window.addEventListener("keydown", changeColor);
+
+console.log(event.key)

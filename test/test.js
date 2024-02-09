@@ -15,4 +15,3 @@ function betterThanAverage(classPoints, yourPoints) {
       console.log("False");
     }
   }
-

@@ -11,9 +11,10 @@ const listContainer = document.getElementById("list");
 userInput.addEventListener("submit", (event) => {
     event.preventDefault();
     const inputField = document.getElementById("title");
-    const listInput = inputField.value
+    const listInput = inputField.value;
+    console.log(listInput);
     const newItem = document.createElement("li");
-    const newListItem = document.createElement("div")
+    const newListItem = document.createElement("div");
     newListItem.textContent = listInput;
     // newItem.insertAdjacentHTML("afterbegin", "<div>".concat(listInput, "</div>"))
     // newItem.classList.add("list");

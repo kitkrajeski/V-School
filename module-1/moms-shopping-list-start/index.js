@@ -1,17 +1,12 @@
-// const userInput = document.getElementById('form[name="addItem"]');
-// const listContainer = document.getElementById("list");
-// userInput.addEventListener ("submit", (event) => {
-//     event.preventDefault();
-//     const listInput = document.getElementById("title").value;
-//     console.log(listInput);
-// })
-const userInput = document.querySelector('form[name="addItem"]');
+// grab form name rather than id (?)
+const userInput = document.addItem
+// grab list element for appending and 
 const listContainer = document.getElementById("list");
 
 userInput.addEventListener("submit", (event) => {
     event.preventDefault();
-    const inputField = document.getElementById("title");
-    const listInput = inputField.value;
+    const inputField = userInput.title.value;
+    const listInput = inputField;
     console.log(listInput);
     const newItem = document.createElement("li");
     const newListItem = document.createElement("div");

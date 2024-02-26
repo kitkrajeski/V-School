@@ -14,23 +14,18 @@ document.querySelector(".message.right").textContent = "yo";
 console.log(leftOne)
 document.querySelector(".message.left:nth-child(3)").textContent = "wassup?";
 document.querySelector(".message.right:nth-child(4)").textContent = "wassup?";
-// var messagesL = document.querySelector(".left");
-// var messageTres = document.querySelector(".left:nth-child(2)");
-// messageTres.innerHTML = "wassup?";
-// messagesL.appendChild(messageTres);
 
 var clearButton = document.getElementById("clear-button");
 clearButton.addEventListener("click", function() {
     var allMessages = document.querySelectorAll(".message");
     allMessages.forEach(function(message) {
-        message.textContent = "";
+        message.remove();
     })
 })
 var messageL = document.querySelectorAll(".left");
 console.log("messageL: ",messageL)
 var messageR = document.querySelectorAll(".right");
 var dropDown = document.getElementById("theme-drop-down");
-console.log("dropDown: ", dropDown)
 function changeTheme() {
     console.log(dropDown.value)
     if(dropDown.value === "theme-one"){

@@ -11,8 +11,6 @@ userInput.addEventListener("submit", (event) => {
     const newItem = document.createElement("li");
     const newListItem = document.createElement("div");
     newListItem.textContent = listInput;
-    // newItem.insertAdjacentHTML("afterbegin", "<div>".concat(listInput, "</div>"))
-    // newItem.classList.add("list");
     const buttonEdit = document.createElement("button");
     buttonEdit.textContent = "Edit";
     buttonEdit.classList.add("editButton");
@@ -23,10 +21,10 @@ userInput.addEventListener("submit", (event) => {
     newItem.appendChild(buttonEdit);
     newItem.appendChild(buttonDel);
     listContainer.appendChild(newItem);
-    inputField.value = "";
+    userInput.title.value = "";
 });
 
-listContainer.addEventListener("click", event => {
+listContainer.addEventListener("click", event => {TextMetrics
     const clickedElement = event.target;
     if (clickedElement.classList.contains("deleteButton")) {
         const listItem = clickedElement.parentNode;

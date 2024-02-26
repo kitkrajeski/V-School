@@ -44,9 +44,9 @@
 //         }
 //     } else {
 //         if(isMale) {
-//             console.log(firstName + " is not old enought to see Mad Max Fury Road, don't let HIM in.")
+//             console.log(firstName + " is not old enough to see Mad Max Fury Road, don't let HIM in.")
 //         } else {
-//             console.log(firstName + " is not old enought to see Mad Max Fury Road, don't let HER in.")
+//             console.log(firstName + " is not old enough to see Mad Max Fury Road, don't let HER in.")
 //         }
 //     }
 // }  

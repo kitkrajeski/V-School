@@ -1,0 +1,95 @@
+#navbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(112, 128, 144, 0.9);
+}
+
+#about {
+    display: flex;
+    padding-top: 55px;
+}
+
+#about img {
+    width: 40%;
+    height: auto;
+}
+
+#about .text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+#about .text img {
+    width: 50%;
+    margin-left: 175px;
+}
+
+#menu {
+    display: block;
+    background-color: rgba(37, 43, 70, 0.4);
+}
+
+.menuItem {
+    display: flex;
+}
+
+.menuItem img {
+    width: 15%;
+}
+
+.menuItem .text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+.orderItem {
+    display: flex;
+    justify-content: center;
+}
+
+#photoGallery {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+#photoGallery div {
+    height:350px;
+    width:100%;
+}
+
+#contact {
+    display: flex;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.contactForm {
+    display: flex;
+}
+
+.contactForm input {
+    margin-left: 150px;
+    padding: 15px;
+    width: 500px;
+}
+
+.contactForm button {
+    height: 25px;
+}
+
+@media screen and (min-width: 600px){
+    #navbar {
+        flex-direction: row;
+        gap: 150px
+    }
+}

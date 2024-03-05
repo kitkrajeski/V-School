@@ -2,8 +2,9 @@
   "name": "sp92.5-colossal-adventure-rpg",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "demo.js",
   "scripts": {
+    "start": "node main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

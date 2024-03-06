@@ -9,3 +9,7 @@
 #multiply {
     background-color: chartreuse;
 }
+
+h1 {
+    display: inline-block;
+}

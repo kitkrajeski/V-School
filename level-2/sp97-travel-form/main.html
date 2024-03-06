@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="travelForm">
+        <div id="name" style="display:flex;flex-direction:column;width:100px">
+            <label for="fName">First Name:</label>
+            <input id="fName" type="text" name="firstName"/>
+            <label for="lName">Last Name:</label>
+            <input id="lName" type="text" name="lastName"/>
+        </div>
+        <div id="age" style="display:flex;flex-direction:column;width:100px">
+            <label for="pAge">Age:</label>
+            <input id="pAge" type="number" min=18 max=75/> 
+        </div>
+        <div id="gender" style="display:flex;flex-direction:column;width:100px">
+            <label>Gender:</label>
+            <label for="mPGender" class="radio-label">Male:</label>            
+            <input id="mPGender" type="radio" name="pGender" value="male"/>
+            <label for="fPGender">Female:</label>
+            <input id="pGender" type="radio" name="pGender" value="female"/>
+            <label for="wPGender">Whatevs:</label>
+            <input id="wPGender" type="radio" name="pGender" value="whatevs"/>
+        </div>
+        <div id="destination" style="display:flex;flex-direction:column;width:100px">
+            <label>Destination:</label>
+            <select name="destination">
+                <option name="destination" value="Paris">Paris</option>
+                <option name="destination" value="Toulouse">Toulouse</option>
+                <option name="destination" value="Tours">Tours</option>
+            </select>
+        </div>
+        <div id="dietary" style="display:flex;flex-direction:column;width:100px">
+            <label>Dietary Restrictions:</label>
+            <label for="vegetarian">Vegetarian:</label>
+            <input id="vegetarian" type="checkbox" name="dietary" value="vegetarian"/>
+            <label for="paleo">Paleo:</label>
+            <input id="paleo" type="checkbox" name="dietary" value="paleo"/>
+            <label for="kosher">Kosher:</label>
+            <input id="kosher" type="checkbox" name="dietary" value="kosher"/>
+            <label for="halal">Halal:</label>
+            <input id="halal" type="checkbox" name="dietary" value="halal"/>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+</body>
+<script src="main.js"></script>
+
+</html>

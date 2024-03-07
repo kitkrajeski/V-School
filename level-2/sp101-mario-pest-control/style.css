@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    border: 2px solid red; 
+}
+.mario-img {
+    width: 150px;
+    height: auto;
+}
+
+.creatureContainer {
+    display: flex;
+}
+
+.creatureContainer .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.creatureContainer input {
+    width: 200px;
+}
+
+#contactInfo {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px; 
+    border: 2px solid red;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mario-img {
+        width: 100px; /* Adjust image size for smaller screens */
+    }
+
+    .creatureContainer {
+        flex-direction: column; /* Stack creature containers vertically on smaller screens */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .creatureContainer input {
+        width: 80%; /* Adjust input width for smaller screens */
+        margin: 10px 0; /* Add margin between inputs */
+    }
+
+    #contactInfo {
+        align-items: center; /* Center contact info on smaller screens */
+    }
+}

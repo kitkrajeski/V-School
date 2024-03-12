@@ -38,8 +38,9 @@ var peopleArray = [
 
 function sortedOfAge(arr) {
     return ((arr.filter(person => person.age > 18)).sort((a, b) => a.lastName.localeCompare(b.lastName))).reduce((accumulator, person) => {
-        return [...accumulator, `<li>${person.firstName} ${person.lastName} is ${person.age}</li>`]
-    }, []);
+        accumulator.push(`<li>${person.firstName} ${person.lastName} is ${person.age}</li>`)
+        return accumulator;
+    }, [])
 }
 
 console.log(sortedOfAge(peopleArray));

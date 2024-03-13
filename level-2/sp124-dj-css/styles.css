@@ -1,0 +1,52 @@
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: blanchedalmond;
+    border: 5px dotted;
+}
+
+#box1:hover {
+    box-shadow: 5px 5px;
+    background-color: blueviolet;
+    transition: box-shadow 2s;
+}
+
+#box2:hover {
+    border: 5px solid;
+    border-radius: 10px;
+    transition: all 2s;
+}
+
+#box3:hover {
+    background-color: aquamarine;
+    opacity: 0.5;
+    transition: opacity 2s;
+}
+
+#box4:hover {
+    height: 50px;
+    width: 50px;
+    transition: all 2s;
+}
+
+#box5:hover {
+    margin: 50px;
+    padding: 50px;
+    transition: all 2s;
+}
+
+#box6:hover {
+    position: absolute;
+    top: 75px;
+    transition: position 5s;
+}

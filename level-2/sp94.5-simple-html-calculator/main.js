@@ -33,3 +33,4 @@ mulButton.addEventListener("click", event => {
     sum3.value = multiply1 * multiply2;
     mulCalculator.appendChild(sum3);
 });
+

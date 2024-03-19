@@ -1,0 +1,78 @@
+{
+    "appetizers": [
+        {
+            "name": "garlic bread",
+            "ingredients": ["bread", "garlic", "cheese"],
+            "description": "it's fucking garlic cheese bread, man"
+        },
+        {
+            "name": "mozarella sticks",
+            "ingredients": ["sticks", "mozarella", "marinara"],
+            "description": "it's fucking cheese, fried and breaded, man"
+        },
+        {
+            "name": "hummus",
+            "ingredients": ["pita", "garbanzo beans", "crudite"],
+            "description": "it's that middle-eastern stuff, brah"
+        }
+    ],
+    "coldSandwiches": [
+        {
+            "name": "turkey-avocado",
+            "ingredients": ["rye", "turkey", "avocado"],
+            "description": "it's the sandwich, man"
+        },
+        {
+            "name": "ham and cheese",
+            "ingredients": ["ham", "cheese"],
+            "description": "it's legit"
+        },
+        {
+            "name": "club sandwich",
+            "ingredients": ["white bread", "turkey", "bacon", "mayonnaise"],
+            "description": "it's fucking the sandwich you eat at the club, man"
+        }
+
+    ],
+    "hotSandwiches": [
+        {
+            "name": "philly cheesesteark",
+            "ingredients": ["roll", "sirloin", "vegetables", "wizz"],
+            "description": "it's fucking the city of brotherly love, man"
+        },
+        {
+            "name": "reuber",
+            "ingredients": ["rye", "corned beef", "1000 island"],
+            "description": "it's fucking hasidic, man"
+        },
+        {
+            "name": "meatball sub",
+            "ingredients": ["sub roll", "meatballs", "marinara"],
+            "description": "it's fucking shaped like a sub, man"
+        }
+    ],
+    "desserts": [
+        {
+            "name": "tiramasu",
+            "ingredients": ["tira", "ma", "su"],
+            "description": "it's fucking sweet coffee, man"
+        },
+        {
+            "name": "cc cookie",
+            "ingredients": ["chocolate", "chip", "cookie", "walnut"],
+            "description": "it's fucking from the cookie jar, man"
+        }
+    ],
+    "drinks": [
+        {
+            "name": "coke",
+            "ingredients": ["coke", "cola", "ice"],
+            "description": "it's fucking atlantian, brah"
+        },
+        {
+            "name": "iced tea",
+            "ingredients": ["tea", "bergamont", "ice"],
+            "description": "it's tea with ice, man"
+        }
+    ]
+}

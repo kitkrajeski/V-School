@@ -72,7 +72,7 @@
 
 // const unshift = (array, ...args) => [...args, ...array];
 
-const function populatePeople(names){
+function populatePeople(names){
     return names.map(function(name){
         name = name.split(" ");
         // your code

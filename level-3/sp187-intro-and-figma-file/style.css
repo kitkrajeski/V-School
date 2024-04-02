@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Poppins, san-serif;
+}
+
+nav {
+    display: flex;
+    box-shadow: 0px 2.9825618267059326px 7.456404209136963px 0px #0000001A;
+    height: 70px;
+}
+
+.nav--logo {
+    height: 40px;
+    margin: 15px 35px;
+}
+
+.hero {
+    padding: 25px 45px;
+    
+}
+
+.hero--img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero--img {
+    height: 350px;
+}
+
+.hero--text {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero--text h1 {
+    font-size: 46px;
+    line-height: 110%;
+    font-weight: 800;
+    text-shadow: 0px 2.9825618267059326px 7.456404209136963px rgba(0, 0, 0, 0.3);
+}
+
+.hero--text p {
+    font-size: 25px;
+    width: 350px;
+    text-shadow: 0px 2.9825618267059326px 7.456404209136963px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    padding: 25px 45px;
+    text-shadow: 0px 2.9825618267059326px 7.456404209136963px rgba(0, 0, 0, 0.3);
+
+}
+
+.firstCard {
+    display: flex;
+    flex-direction: column;
+}
+
+.card--img {
+    height: 350px;
+    width: 250px;
+    border-radius: 10%;
+}
+
+.card--reviews {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card--stars {
+    color: #222222;
+    padding: 0px 10px;
+}
+
+.card--numberReviews {
+    color: #918E9B;
+}
+
+.card--activity {
+    margin: 0px;
+    color: #222222;
+}

@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import Contact from "./components/Contact"
 
 /* Challenge:
 
@@ -11,8 +12,31 @@ import React from "react"
 function App() {
     return (
         <div className="contacts">
-        
-            <div className="contact-card">
+            <Contact 
+                img="./images/mr-whiskerson.png"
+                name="Mr Whiskerson"
+                phone="(212) 555.1234"
+                email="mr.whiskaz@catnap.meow"
+                />
+            <Contact 
+                img="./images/fluffykins.png"
+                name="Fluffykins"
+                phone="(212) 555.2345"
+                email="fluff@me.com"
+                />
+            <Contact 
+                img="./images/felix.png"
+                name="Felix"
+                phone="(212) 555-3456"
+                email="thecat@hotmail.com"
+                />
+            <Contact 
+                img="./images/pumpkin.png"
+                name="Pumpkin"
+                phone="(212) 555-4567"
+                email="pumpkin@scrimba.com"
+                />
+            {/* <div className="contact-card">
                 <img src="./images/mr-whiskerson.png"/>
                 <h3>Mr. Whiskerson</h3>
                 <div className="info-group">
@@ -62,7 +86,7 @@ function App() {
                     <img src="./images/mail-icon.png" />
                     <p>pumpkin@scrimba.com</p>
                 </div>
-            </div>
+            </div> */}
             
         </div>
     )

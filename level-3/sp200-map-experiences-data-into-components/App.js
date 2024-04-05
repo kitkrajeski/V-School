@@ -16,7 +16,8 @@ still be block elements, stacked vertically. We'll add styling later.
 */
 export default function App() {
     const cardElements = data.map(card => {
-        return <Card 
+        return ( 
+            <Card 
             img={card.coverImg}
             rating={card.stats.rating}
             reviewCount={card.stats.reviewCount}
@@ -24,6 +25,7 @@ export default function App() {
             title={card.title}
             price={card.price}
             />    
+        )
     })
             // <Hero />
     return (

@@ -23,29 +23,29 @@
 // console.log(solution([100, -1, 50, -1, 75]))
 
 // !!!CODE CHALLENGE FROM SLACK!!!
-// function findCommonElements(arr1, arr2) {
-//     const commonElements = arr1.filter(num => arr2.includes(num))
-//     return [...new Set(commonElements)];
-// }
-
-// console.log(findCommonElements([1, 2, 3, 4, 5], [3, 4, 5, 6, 7])); // Expected output: [3, 4, 5]
-// console.log(findCommonElements(["apple", "banana", "orange"], ["orange", "kiwi", "apple"])); // Expected output: ["apple", "orange"]
-// console.log(findCommonElements([true, false, true], [true, true, false])); // Expected output: [true, false]
-
-function countVowels(str) {
-    let numVowels = 0;
-    let splitString = str.split("")
-    splitString.forEach(char => {
-        if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u")
-            numVowels ++
-    })
-    return numVowels
+function findCommonElements(arr1, arr2) {
+    const commonElements = arr1.filter(num => arr2.includes(num))
+    return [...new Set(commonElements)];
 }
 
-const input = 'Hello, World!';
+console.log(findCommonElements([1, 2, 3, 4, 5], [3, 4, 5, 6, 7])); // Expected output: [3, 4, 5]
+console.log(findCommonElements(["apple", "banana", "orange"], ["orange", "kiwi", "apple"])); // Expected output: ["apple", "orange"]
+console.log(findCommonElements([true, false, true], [true, true, false])); // Expected output: [true, false]
 
-console.log(countVowels(input)); // Output: 3
+// function countVowels(str) {
+//     let numVowels = 0;
+//     let splitString = str.split("")
+//     splitString.forEach(char => {
+//         if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u")
+//             numVowels ++
+//     })
+//     return numVowels
+// }
 
-const input1 = 'Counting Vowels';
+// const input = 'Hello, World!';
 
-console.log(countVowels(input1)); // Output: 5
+// console.log(countVowels(input)); // Output: 3
+
+// const input1 = 'Counting Vowels';
+
+// console.log(countVowels(input1)); // Output: 5

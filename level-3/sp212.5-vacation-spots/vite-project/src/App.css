@@ -1,0 +1,21 @@
+.spot {
+  display: flex;
+  padding: 30px 50px;
+}
+.spot--img {
+  width: 100%;
+  max-width: 500px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.spot--textContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 45px;
+}
+
+.spot--textContainer > * {
+  margin: 0px;
+}

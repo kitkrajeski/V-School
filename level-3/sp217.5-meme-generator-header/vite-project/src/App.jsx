@@ -8,7 +8,7 @@ import Meme from "./components/GetNewMeme"
 import data from "./memesData"
 
 
-function MemeList(props) {
+function MemeList(obj) {
   const getRandomIndex = () => Math.floor(Math.random() * props.memes.length);
   const getRandomMeme = () => props.memes[getRandomIndex()]
   return (

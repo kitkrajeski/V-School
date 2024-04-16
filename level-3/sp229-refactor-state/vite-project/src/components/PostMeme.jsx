@@ -3,7 +3,7 @@ import React from "react";
 export default function PostMeme(props) {
     return (
         <div>
-            <img src={props.meme.url} />
+            <img src={props.meme.randomImage} />
         </div>
     )
 }

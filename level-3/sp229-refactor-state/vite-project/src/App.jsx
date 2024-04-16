@@ -10,11 +10,22 @@ import data from "./memesData"
 
 
 function App() {
-  const [currentMeme, setCurrentMeme] = useState(null)
+  const [currentMeme, setCurrentMeme] = useState({
+    topText: "",
+    bottomText: "",
+    randomImage: "http://i.imgflip.com/1bij.jpg"
+  })
+  const [allMemeImages, setAllMemeImages] = useState(data.data.memes)
   const getRandomMeme = () => {
+    // const memesArray = allMemeImages.data.memes
     const randomIndex = Math.floor(Math.random() * data.data.memes.length)
-    setCurrentMeme(data.data.memes[randomIndex])
+    const url = allMemeImages[randomIndex].url
+    setCurrentMeme(prevMeme => ({
+      ...prevMeme,
+      randomImage: url,
+    }))
   }
+  
   return (
     <>
       <Header />

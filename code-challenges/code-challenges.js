@@ -89,25 +89,49 @@
 // console.log(isPalindrome("Hello world")); // Expected output: false
 // console.log(isPalindrome("Doc note I dissent A fast never prevents a fatness I diet on cod")); // Expected output: false
 
-function rollDice() {
-  return Math.floor(Math.random() * 20) + 1
-}
+// function rollDice() {
+//   return Math.floor(Math.random() * 20) + 1
+// }
 
-console.log(rollDice()); // Output: a random number between 1 and 20
+// console.log(rollDice()); // Output: a random number between 1 and 20
 
-function rollDiceAverage() {
-    rolls = []
-    for (let i = 0; i < 5; i++) {
-        rolls.push(rollDice())
-    }
-    return rolls.reduce((acc, roll, index, array) => {
-        acc += roll
-        if (index === array.length - 1) {
-            return Math.floor(acc / array.length)
-        } else {
-            return acc
-        }
-    }, 0)
-}
+// function rollDiceAverage() {
+//     rolls = []
+//     for (let i = 0; i < 5; i++) {
+//         rolls.push(rollDice())
+//     }
+//     return rolls.reduce((acc, roll, index, array) => {
+//         acc += roll
+//         if (index === array.length - 1) {
+//             return Math.floor(acc / array.length)
+//         } else {
+//             return acc
+//         }
+//     }, 0)
+// }
   
-  console.log(rollDiceAverage()); // Output: the average of 5 rolls of a 20-sided dice
+//   console.log(rollDiceAverage()); // Output: the average of 5 rolls of a 20-sided dice
+
+function buildTable(data) {
+    let keys = Object.keys(data[0]).map(key => key.charAt(0).toUpperCase() + key.slice(1))
+    let values = [] 
+    data.map(entry => {
+        return values.push(Object.values(entry))
+    })
+    return [keys, ...values]
+}
+
+const data = [
+    { name: "John Doe", age: 30, profession: "Engineer" },
+    { name: "Alice Smith", age: 25, profession: "Teacher" },
+    { name: "Bob Brown", age: 40, profession: "Doctor" }
+];
+
+console.log(buildTable(data));
+// Expected output:
+//  [
+//     ["Name", "Age", "Profession"],
+//     ["John Doe", 30, "Engineer"],
+//     ["Alice Smith", 25, "Teacher"],
+//     ["Bob Brown", 40, "Doctor"]
+// ]

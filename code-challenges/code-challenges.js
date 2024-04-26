@@ -109,25 +109,38 @@
 //         }
 //     }, 0)
 // }
-  
+
 //   console.log(rollDiceAverage()); // Output: the average of 5 rolls of a 20-sided dice
 
-function buildTable(data) {
-    let keys = Object.keys(data[0]).map(key => key.charAt(0).toUpperCase() + key.slice(1))
-    let values = [] 
-    data.map(entry => {
-        return values.push(Object.values(entry))
-    })
-    return [keys, ...values]
-}
+// function buildTable(data) {
+//     let keys = Object.keys(data[0]).map(key => key.charAt(0).toUpperCase() + key.slice(1))
+//     let values = [] 
+//     data.map(entry => {
+//         return values.push(Object.values(entry))
+//     })
+//     return [keys, ...values]
+// }
 
-const data = [
-    { name: "John Doe", age: 30, profession: "Engineer" },
-    { name: "Alice Smith", age: 25, profession: "Teacher" },
-    { name: "Bob Brown", age: 40, profession: "Doctor" }
-];
+// function buildTable(data) {
+//     const result = []
+//     for (let i = 0; i < data.length; i++) {
+//             if (i === 0) {
+//                     result.push(Object.keys(data[i]))
+//                     result.push(Object.values(data[i]))
+//             } else {
+//                     result.push(Object.values(data[i]))
+//             }
+//     }
+//     return result
+// }
 
-console.log(buildTable(data));
+// const data = [
+//     { name: "John Doe", age: 30, profession: "Engineer" },
+//     { name: "Alice Smith", age: 25, profession: "Teacher" },
+//     { name: "Bob Brown", age: 40, profession: "Doctor" }
+// ];
+
+// console.log(buildTable(data));
 // Expected output:
 //  [
 //     ["Name", "Age", "Profession"],
@@ -135,3 +148,56 @@ console.log(buildTable(data));
 //     ["Alice Smith", 25, "Teacher"],
 //     ["Bob Brown", 40, "Doctor"]
 // ]
+
+// function fizzBuzz(n) {
+//     return Array.from({length: n}, (_, i) => {
+//         i++
+//         if (i % 3 === 0 && i % 5 === 0) {
+//             return "Fizzbuzz"
+//         } else if (i % 3 === 0) {
+//             return "Fizz"
+//         } else if (i % 5 === 0) {
+//             return "Buzz"
+//         } else {
+//             return i
+//         }
+//     })
+// }
+
+// console.log(fizzBuzz(15)); // Expected output: [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz"]
+// console.log(fizzBuzz(10)); // Expected output: [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz"]
+
+// function attack(armorClass = 0) {
+//     // const attackRoll = Math.floor(Math.random() * 20) + 1
+//     const attackRoll = 9
+//     console.log(1)
+//     return attackRoll === 20 ? 'Critical Hit' : attackRoll === 1 ? "You slipped and fell" : attackRoll - armorClass > 10 ? 'Successful hit' : 'Failed hit'
+// }
+
+// console.log(attack()); // Output: "Your attack was successful!" or "Your attack failed!" or "Critical hit!" or "You slipped and fell while attacking, how embarrassing."
+
+// function mergeSortedArrays(arr1, arr2) {
+//     return ([...arr1, ...arr2]).sort((a, b) => a - b)
+// }
+
+// console.log(mergeSortedArrays([1, 3, 5], [2, 4, 6])); // Expected output: [1, 2, 3, 4, 5, 6]
+// console.log(mergeSortedArrays([10, 20, 30], [5, 15, 25])); // Expected output: [5, 10, 15, 20, 25, 30]
+class Gobbie {
+    constructor() {
+        this.hitPoints= (Math.floor(Math.random() * 6) + 1) + (Math.floor(Math.random() * 6) + 1)
+        this.expPoints= Math.floor(this.hitPoints / 2)
+    }
+}
+function generateGoblins() {
+    let gobbies = []
+    const numGobbies = (Math.floor(Math.random() * 6) + 1) * 2
+    console.log(numGobbies)
+    for (let i = 0; i < numGobbies; i++) {
+        gobbies.push(new Gobbie()); 
+    }
+    return gobbies
+  }
+  
+  const goblins = generateGoblins();
+  console.log(goblins);
+  // Output: An array of goblins, with each goblin having hitPoints and expPoints properties

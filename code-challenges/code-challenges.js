@@ -182,22 +182,44 @@
 
 // console.log(mergeSortedArrays([1, 3, 5], [2, 4, 6])); // Expected output: [1, 2, 3, 4, 5, 6]
 // console.log(mergeSortedArrays([10, 20, 30], [5, 15, 25])); // Expected output: [5, 10, 15, 20, 25, 30]
-class Gobbie {
-    constructor() {
-        this.hitPoints= (Math.floor(Math.random() * 6) + 1) + (Math.floor(Math.random() * 6) + 1)
-        this.expPoints= Math.floor(this.hitPoints / 2)
-    }
-}
-function generateGoblins() {
-    let gobbies = []
-    const numGobbies = (Math.floor(Math.random() * 6) + 1) * 2
-    console.log(numGobbies)
-    for (let i = 0; i < numGobbies; i++) {
-        gobbies.push(new Gobbie()); 
-    }
-    return gobbies
-  }
+// class Gobbie {
+//     constructor() {
+//         this.hitPoints= (Math.floor(Math.random() * 6) + 1) + (Math.floor(Math.random() * 6) + 1)
+//         this.expPoints= Math.floor(this.hitPoints / 2)
+//     }
+// }
+// function generateGoblins() {
+//     let gobbies = []
+//     const numGobbies = (Math.floor(Math.random() * 6) + 1) * 2
+//     console.log(numGobbies)
+//     for (let i = 0; i < numGobbies; i++) {
+//         gobbies.push(new Gobbie()); 
+//     }
+//     return gobbies
+//   }
   
-  const goblins = generateGoblins();
-  console.log(goblins);
+//   const goblins = generateGoblins();
+//   console.log(goblins);
   // Output: An array of goblins, with each goblin having hitPoints and expPoints properties
+
+const debaters = [
+    { name: "Jamie", school: "LHS", grade: 9, wins: 1, losses: 1 },
+    { name: "Riley", school: "BHS", grade: 11, wins: 2, losses: 3 },
+];
+
+const getSchoolWithMostWins = (debaters) => {
+    const winsBySchool = {}
+    debaters.forEach(debater => {
+        if (winsBySchool[debater.school]) {
+            winsBySchool[debater.school] += debater.wins
+        } else {
+            winsBySchool[debater.school] += debater.wins
+        }
+    })
+    let schoolWithMostWins = "";
+    let maxWins = 0;
+
+  // Find the school with the most wins
+    console.log(winsBySchool)
+}; // expected output: a string representing the winning school, i.e, "BHS" 
+getSchoolWithMostWins(debaters)

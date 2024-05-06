@@ -202,24 +202,33 @@
 //   console.log(goblins);
   // Output: An array of goblins, with each goblin having hitPoints and expPoints properties
 
-const debaters = [
-    { name: "Jamie", school: "LHS", grade: 9, wins: 1, losses: 1 },
-    { name: "Riley", school: "BHS", grade: 11, wins: 2, losses: 3 },
-];
+// function findPrimesInRange(start, end) {
+//     let primes = []
+//     for (let i = start ; i <= end ; i++) {
+//         let isPrime = true
+//         for (let j = 2 ; j < i ; j ++) {
+//             if (i % j === 0) {
+//                 isPrime = false
+//                 break
+//             }
+//         } if (i > 1 && isPrime) {
+//             primes.push(i)
+//         }
+//     }
+//     return primes
+// }
 
-const getSchoolWithMostWins = (debaters) => {
-    const winsBySchool = {}
-    debaters.forEach(debater => {
-        if (winsBySchool[debater.school]) {
-            winsBySchool[debater.school] += debater.wins
-        } else {
-            winsBySchool[debater.school] += debater.wins
-        }
-    })
-    let schoolWithMostWins = "";
-    let maxWins = 0;
+// console.log(findPrimesInRange(10, 20)); // Expected output: [11, 13, 17, 19]
+// console.log(findPrimesInRange(1, 5)); // Expected output: [2, 3, 5]
+// // Optional Challenge
+// console.log(findPrimesInRange(10, 1)); // Expected output: [2, 3, 5, 7]
 
-  // Find the school with the most wins
-    console.log(winsBySchool)
-}; // expected output: a string representing the winning school, i.e, "BHS" 
-getSchoolWithMostWins(debaters)
+function checkNumber(num) {
+    return num < 0 ? "Negative" : num > 0 ? "Positive" : (isNaN(num) ? `${num} isn't a number, it's a ${typeof num}` : "Zero")
+    
+  }
+  
+  console.log(checkNumber(5)); // Output: "positive"
+  console.log(checkNumber(-10)); // Output: "negative"
+  console.log(checkNumber(0)); // Output: "zero"
+  console.log(checkNumber("October"))

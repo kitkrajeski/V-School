@@ -14,8 +14,10 @@ function App() {
     setColor(colors[0] === "white" ? ["black", "black", "black", "black"] : ["white", "white", "white", "white"])
   }
 
-  function topPurple() {
-    setColor(prevColor => ["purple", "purple", prevColor[2], prevColor[3]])
+  function switchPurple() {
+    if (colors[0] != "purple") {
+      setColor(prevColor => ["purple", prevColor[1], prevColor[2], prevColor[3]])
+      }
   }
 
   function leftBlue() {
@@ -29,7 +31,7 @@ function App() {
     <>
       {applyColors()}
       <ColorToggleButton onClick={blackOrWhite}>I'm just an object, bro!</ColorToggleButton>
-      <ColorToggleButton onClick={topPurple}>Me too!</ColorToggleButton>
+      <ColorToggleButton onClick={switchPurple}>Me too!</ColorToggleButton>
       <ColorToggleButton onClick={leftBlue}>Wait, I'm just an object!</ColorToggleButton>
       <ColorToggleButton onClick={rightBlue}>I was first!</ColorToggleButton>
     </>

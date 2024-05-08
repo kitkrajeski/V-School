@@ -223,12 +223,49 @@
 // // Optional Challenge
 // console.log(findPrimesInRange(10, 1)); // Expected output: [2, 3, 5, 7]
 
-function checkNumber(num) {
-    return num < 0 ? "Negative" : num > 0 ? "Positive" : (isNaN(num) ? `${num} isn't a number, it's a ${typeof num}` : "Zero")
+// function checkNumber(num) {
+//     return num < 0 ? "Negative" : num > 0 ? "Positive" : (isNaN(num) ? `${num} isn't a number, it's a ${typeof num}` : "Zero")
     
-  }
+//   }
   
-  console.log(checkNumber(5)); // Output: "positive"
-  console.log(checkNumber(-10)); // Output: "negative"
-  console.log(checkNumber(0)); // Output: "zero"
-  console.log(checkNumber("October"))
+//   console.log(checkNumber(5)); // Output: "positive"
+//   console.log(checkNumber(-10)); // Output: "negative"
+//   console.log(checkNumber(0)); // Output: "zero"
+//   console.log(checkNumber("October"))
+
+// function maxDifference(nums) {
+//   return (nums.reduce((acc, num) => num > acc ? num : acc, "")) - Math.min(...nums)
+// }
+
+// console.log(maxDifference([1, 7, 5, 9, 2, 12])); // Expected output: 11 (12 - 1 = 11)
+// console.log(maxDifference([10, 20, 30, 40])); // Expected output: 30 (40 - 10 = 30)
+// console.log(maxDifference([1, 2, 3, 4, 5])); // Expected output: 4 (5 - 1 = 4)
+
+// const getFib = () => {
+  
+//   let fibArray = [0, 1]
+//   for (let i = 2 ; i < 10 ; i++) {
+//     fibArray.push(fibArray[i - 1] + fibArray[i - 2])
+//     }
+//   return fibArray
+//   }
+
+// console.log(getFib())
+// output: [0,1,1, 2, 3, 5, 8, 13, 21, 34]
+
+// function sumOfMultiples(num, limit) {
+//   let multiples = []
+//   for (let i = num ; i <= limit ; i ++) {
+//     i % num === 0 && multiples.push(i)
+//   } 
+//   return multiples.reduce((acc, num) => acc + num, 0)
+// }
+
+function sumOfMultiples(num, limit) {
+  const numArray = Array.from({ length: (limit - num + 1)}, (_, index) => index + num)
+  return multiples = numArray.reduce((acc, currVal) => currVal % num === 0 ? currVal + acc : acc, 0)
+}
+
+console.log(sumOfMultiples(3, 10)); // Expected output: 18 (3 + 6 + 9)
+console.log(sumOfMultiples(5, 20)); // Expected output: 50 (5 + 10 + 15 + 20)
+console.log(sumOfMultiples(7, 15)); // Expected output: 35 (7 + 14)

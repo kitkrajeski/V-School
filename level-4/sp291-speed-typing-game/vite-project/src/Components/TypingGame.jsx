@@ -1,10 +1,13 @@
-import React, {useState, useEffect} from "react"
+import React, {useState, useEffect, useRef} from "react"
 
 function TypingGame() {
     const [text, setText] = useState("")
     const [timeRemaining, setTimeRemaining] = useState(5)
     const [start, setStart] = useState(false)
     const [wordCount, setWordCount] = useState(0)
+
+    const textareaRef = useRef(null)
+
 
     function handleChange(event) {
         const {value} = event.target
@@ -13,6 +16,7 @@ function TypingGame() {
 
     function handleStart() {
         setStart(prevStart => !prevStart)
+        textareaRef.current.focus()
     }
 
     useEffect(() => {
@@ -29,7 +33,7 @@ function TypingGame() {
         <div>
             <h1>Yo, Yo, Yo, this be for typing</h1>
             <div>
-                <textarea onChange={handleChange}/>
+                <textarea onChange={handleChange} disabled={!start} ref={textareaRef}/>
             </div>
             <h4>Time Remaining, bitch: {timeRemaining}</h4>
             <button onClick={handleStart}>Let's go, Mother Fucker!</button>

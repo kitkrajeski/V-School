@@ -1,0 +1,25 @@
+.input-fields {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    background-color: #D8BFD8;
+    transition: background-color 0.5s;
+}
+
+.input-button {
+    display: flex;
+    justify-content: center;
+    background-color: #ba63ba;
+    transition: background-color 0.3s;
+
+}
+
+.posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%
+}

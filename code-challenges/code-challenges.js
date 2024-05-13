@@ -261,11 +261,28 @@
 //   return multiples.reduce((acc, num) => acc + num, 0)
 // }
 
-function sumOfMultiples(num, limit) {
-  const numArray = Array.from({ length: (limit - num + 1)}, (_, index) => index + num)
-  return multiples = numArray.reduce((acc, currVal) => currVal % num === 0 ? currVal + acc : acc, 0)
-}
+// function sumOfMultiples(num, limit) {
+//   const numArray = Array.from({ length: (limit - num + 1)}, (_, index) => index + num)
+//   return multiples = numArray.reduce((acc, currVal) => currVal % num === 0 ? currVal + acc : acc, 0)
+// }
 
-console.log(sumOfMultiples(3, 10)); // Expected output: 18 (3 + 6 + 9)
-console.log(sumOfMultiples(5, 20)); // Expected output: 50 (5 + 10 + 15 + 20)
-console.log(sumOfMultiples(7, 15)); // Expected output: 35 (7 + 14)
+// console.log(sumOfMultiples(3, 10)); // Expected output: 18 (3 + 6 + 9)
+// console.log(sumOfMultiples(5, 20)); // Expected output: 50 (5 + 10 + 15 + 20)
+// console.log(sumOfMultiples(7, 15)); // Expected output: 35 (7 + 14)
+
+function customizePizza(order) {
+  // const {size, crust, toppings} = order
+  // return Object.entries(order).map(([key, value]) => {key, value})
+  // return Object.keys(order).map(key => ({key, value: order[key]}))
+  const description = `A ${order.size} pizza with ${order.crust} crust, topped with ${order.toppings.join(', ')}`
+  order.description = description
+  return order
+}
+const myOrder = {
+  size: "large",
+  crust: "thin",
+  toppings: ["pepperoni", "mushrooms", "onions"],
+};
+
+console.log(customizePizza(myOrder));
+// Output: { size: "large", crust: "thin", toppings: ["pepperoni", "mushrooms", "onions"], description: "A large pizza with thin crust, topped with pepperoni, mushrooms, and onions." }

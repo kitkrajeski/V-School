@@ -270,19 +270,62 @@
 // console.log(sumOfMultiples(5, 20)); // Expected output: 50 (5 + 10 + 15 + 20)
 // console.log(sumOfMultiples(7, 15)); // Expected output: 35 (7 + 14)
 
-function customizePizza(order) {
-  // const {size, crust, toppings} = order
-  // return Object.entries(order).map(([key, value]) => {key, value})
-  // return Object.keys(order).map(key => ({key, value: order[key]}))
-  const description = `A ${order.size} pizza with ${order.crust} crust, topped with ${order.toppings.join(', ')}`
-  order.description = description
-  return order
-}
-const myOrder = {
-  size: "large",
-  crust: "thin",
-  toppings: ["pepperoni", "mushrooms", "onions"],
-};
+// function customizePizza(order) {
+//   // const {size, crust, toppings} = order
+//   // return Object.entries(order).map(([key, value]) => {key, value})
+//   // return Object.keys(order).map(key => ({key, value: order[key]}))
+//   const description = `A ${order.size} pizza with ${order.crust} crust, topped with ${order.toppings.join(', ')}`
+//   order.description = description
+//   return order
+// }
+// const myOrder = {
+//   size: "large",
+//   crust: "thin",
+//   toppings: ["pepperoni", "mushrooms", "onions"],
+// };
 
-console.log(customizePizza(myOrder));
-// Output: { size: "large", crust: "thin", toppings: ["pepperoni", "mushrooms", "onions"], description: "A large pizza with thin crust, topped with pepperoni, mushrooms, and onions." }
+// console.log(customizePizza(myOrder));
+// // Output: { size: "large", crust: "thin", toppings: ["pepperoni", "mushrooms", "onions"], description: "A large pizza with thin crust, topped with pepperoni, mushrooms, and onions." }
+
+// function Vehicle(wheels, year) {
+//   this.wheels = wheels;
+//   this.year = year;
+//   this.miles = 0
+//   this.drive = function(distance) {
+//     return this.miles += distance
+//   }
+// }
+
+// function Motorcycle()
+
+// const myCar = new Vehicle("4", "95")
+
+// console.log(myCar)
+
+// const animals = ['lion', 'elephant', 'giraffe', 'zebra'];
+
+// function hasAnimal(animalList, animalName) {
+//   const booleans = animalList.map(animal => animal === animalName)
+//   return booleans.includes(true)
+// }
+
+// console.log(hasAnimal(animals, 'lion')); // Output: true
+// console.log(hasAnimal(animals, 'monkey')); // Output: false
+
+const animals = [
+  { name: 'Leo', species: 'lion', age: 8 },
+  { name: 'Zoe', species: 'zebra', age: 5 },
+  { name: 'Ella', species: 'elephant', age: 12 },
+  { name: 'Gigi', species: 'giraffe', age: 10 },
+];
+
+function sortAnimalsByOldest(animalList) {
+  return animalList.sort((a, b) => b.age - a.age)
+} 
+
+console.log(sortAnimalsByOldest(animals))
+
+  // { name: 'Ella', species: 'elephant', age: 12 },
+  // { name: 'Gigi', species: 'giraffe', age: 10 },
+  // { name: 'Leo', species: 'lion', age: 8 },
+  // { name: 'Zoe', species: 'zebra', age: 5 }

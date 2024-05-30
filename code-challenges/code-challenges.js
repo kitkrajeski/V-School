@@ -312,20 +312,71 @@
 // console.log(hasAnimal(animals, 'lion')); // Output: true
 // console.log(hasAnimal(animals, 'monkey')); // Output: false
 
-const animals = [
-  { name: 'Leo', species: 'lion', age: 8 },
-  { name: 'Zoe', species: 'zebra', age: 5 },
-  { name: 'Ella', species: 'elephant', age: 12 },
-  { name: 'Gigi', species: 'giraffe', age: 10 },
-];
+// const animals = [
+//   { name: 'Leo', species: 'lion', age: 8 },
+//   { name: 'Zoe', species: 'zebra', age: 5 },
+//   { name: 'Ella', species: 'elephant', age: 12 },
+//   { name: 'Gigi', species: 'giraffe', age: 10 },
+// ];
 
-function sortAnimalsByOldest(animalList) {
-  return animalList.sort((a, b) => b.age - a.age)
-} 
+// function sortAnimalsByOldest(animalList) {
+//   return animalList.sort((a, b) => b.age - a.age)
+// } 
 
-console.log(sortAnimalsByOldest(animals))
+// console.log(sortAnimalsByOldest(animals))
 
   // { name: 'Ella', species: 'elephant', age: 12 },
   // { name: 'Gigi', species: 'giraffe', age: 10 },
   // { name: 'Leo', species: 'lion', age: 8 },
   // { name: 'Zoe', species: 'zebra', age: 5 }
+
+  
+  // Output: [
+  //   { name: 'Zoe', species: 'zebra', foodPreferences: ['grass', 'leaves'] },
+  //   { name: 'Ella', species: 'elephant', foodPreferences: ['grass', 'fruits'] },
+  //   { name: 'Gigi', species: 'giraffe', foodPreferences: ['leaves', 'twigs'] }
+  // ]
+
+  // const animals = [
+  //   { name: 'Leo', species: 'lion', foodPreferences: ['meat', 'fish'] },
+  //   { name: 'Zoe', species: 'zebra', foodPreferences: ['grass', 'leaves'] },
+  //   { name: 'Ella', species: 'elephant', foodPreferences: ['grass', 'fruits'] },
+  //   { name: 'Gigi', species: 'giraffe', foodPreferences: ['leaves', 'twigs'] },
+  //   { name: 'Ari', species: 'alligator', foodPreferences: ['meat', 'fish', 'insects'] },
+  // ];
+  
+  // function getVegetarianAnimals(animalList) {
+  //   const meats = ['meat', 'fish', 'insects']
+  //   return animalList.reduce((acc, animal) => {
+  //     return !animal.foodPreferences.includes(meats) ? acc : [...acc, animal]
+  //   }, [])
+  // }
+  
+  // Output: [
+  //   { name: 'Zoe', species: 'zebra', foodPreferences: ['grass', 'leaves'] },
+  //   { name: 'Ella', species: 'elephant', foodPreferences: ['grass', 'fruits'] },
+  //   { name: 'Gigi', species: 'giraffe', foodPreferences: ['leaves', 'twigs'] }
+  // ]
+
+  // const resident = { name: "Primrose", age: 11 };
+  // function isEligible(resident){
+  //   return resident.age >= 12 && resident.age <= 18 
+  // } 
+
+  // console.log(isEligible(resident))
+
+  const candidates = [
+    { name: "Katniss", gender: "F", age: 16 },
+    { name: "Peeta", gender: "M", age: 17 },
+    { name: "Primrose", gender: "F", age: 12 },
+    { name: "Gale", gender: "M", age: 17 }
+];
+
+function getTributes(candidates) {
+  const random = Math.floor(Math.random() * ((candidates.length) - 1))
+  console.log(random)
+
+    // Your code here
+} // Output: any one male and any one female candidate in an array
+
+console.log(getTributes(candidates))

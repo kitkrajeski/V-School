@@ -3,9 +3,8 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/bounties', require('./routers/bountyRouter.js'));
+app.use('/things', require('./routers/things'));
 
 app.listen(9000, () => {
-    console.log('App is maybe listening');
+    console.log('App is a go, bro');
 })
-

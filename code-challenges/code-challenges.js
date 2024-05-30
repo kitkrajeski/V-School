@@ -365,18 +365,19 @@
 
   // console.log(isEligible(resident))
 
-  const candidates = [
-    { name: "Katniss", gender: "F", age: 16 },
-    { name: "Peeta", gender: "M", age: 17 },
-    { name: "Primrose", gender: "F", age: 12 },
-    { name: "Gale", gender: "M", age: 17 }
-];
+//   const candidates = [
+//     { name: "Katniss", gender: "F", age: 16 },
+//     { name: "Peeta", gender: "M", age: 17 },
+//     { name: "Primrose", gender: "F", age: 12 },
+//     { name: "Gale", gender: "M", age: 17 }
+// ];
 
-function getTributes(candidates) {
-  const random = Math.floor(Math.random() * ((candidates.length) - 1))
-  console.log(random)
+// function getTributes(candidates) {
+//   const random = Math.floor(Math.random() * ((candidates.length) - 1))
+//   console.log(random)
 
-    // Your code here
-} // Output: any one male and any one female candidate in an array
+//     // Your code here
+// } // Output: any one male and any one female candidate in an array
 
-console.log(getTributes(candidates))
+// console.log(getTributes(candidates))
+

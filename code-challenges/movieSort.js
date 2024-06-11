@@ -31,15 +31,21 @@ const movies = [
     },
   ];
 
-// function getTopRated() { 
-//     const sortedMovies = movies.sort((a, b) => b.rating - a.rating)
-//     return sortedMovies.splice(0, 3)
-// } // output: an array no longer than 3 movies
+function getTopRated() { 
+    const sortedMovies = movies.sort((a, b) => b.rating - a.rating)
+    return sortedMovies.splice(0, 3)
+} // output: an array no longer than 3 movies
 
-// console.log(getTopRated())
+console.log(getTopRated())
 
 function featuredActors(actors = []) {
-    return movies.filter(movie => movie.starring.includes(actors))
+    let filteredMovies = movies.filter(movie => actors.every(actor => movie.starring.includes(actor)));
+    if (filteredMovies.length === 0) {
+        const randomIndex = Math.floor(Math.random() * movies.length);
+        return movies[randomIndex];
+    } else {
+        return filteredMovies;
+    }
 } // output: a movie or a string
 
 console.log(featuredActors(["Tom Hanks", "Robin Wright"]))

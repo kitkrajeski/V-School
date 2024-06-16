@@ -1,6 +1,7 @@
 const express = require('express');
 const bountiesRouter = express.Router();
 const uuid = require('uuid');
+const Movie = require('../models/bounty')
 
 const bounties = [
     {

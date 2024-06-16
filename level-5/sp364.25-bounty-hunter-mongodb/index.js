@@ -10,7 +10,8 @@ mongoose.connect('mongodb+srv://kkrajeski:6KyKuQm8X2An4OUr@vschool.zvyzn1q.mongo
 .then(()=> console.log("Connected to MongoDB"))
 .catch(err => console.error(err));
 
-app.use('/bounties', require('./routers/bountiesRouter'))
+app.use('/bounties', require('./routers/bountiesRouter'));
+app.use('/bounties/type', require('./routers/bountiesRouterType'));
 
 app.listen(8000, () => {
     console.log('app is a go, bro');

@@ -27,6 +27,7 @@ authRouter.post("/signup", (req, res, next) => {
   })
 })
 
+// I'm changing a file
 // Login
 authRouter.post("/login", (req, res, next) => {
   User.findOne({ username: req.body.username.toLowerCase() }, (err, user) => {

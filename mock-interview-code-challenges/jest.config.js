@@ -8,7 +8,7 @@ module.exports = {
     /*  
     If defined, jest will only run tests on the function exported from this file (omit file extension) as defined in the directory '/challenges': 
     */
-    testSingleChallenge: 'char_count',
+    testSingleChallenge: "hero",
 
     /* 
     If defined, jest will only run test on the specified test case index. Will do nothing if 'testSingleChallenge' is not also defined.
@@ -23,10 +23,18 @@ module.exports = {
     /*
     If set to 'true', custom tests will not run. Will do nothing if 'runCustomTestsOnly' is set to 'true'
     */
-    skipCustomTests: true
+    skipCustomTests: true,
   },
+
+  // transform: {},
+
+  // extensionsToTreatAsEsm: [".js"],
+  // moduleNameMapper: {
+  //   "^(\\.{1,2}/.*)\\.js$": "$1",
+  // },
 
   clearMocks: true,
   coverageProvider: "v8",
   verbose: true,
+  // testEnvironment: "node",
 };

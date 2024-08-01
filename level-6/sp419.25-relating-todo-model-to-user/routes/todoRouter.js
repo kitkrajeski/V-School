@@ -13,17 +13,6 @@ todoRouter.get("/", (req, res, next) => {
   })
 })
 
-// Get todos by user id
-todoRouter.get("/user", (req, res, next) => {
-  Todo.find({ user: req.auth._id }, (err, todos) => {
-    if(err){
-      res.status(500)
-      return next(err)
-    }
-    return res.status(200).send(todos)
-  })
-})
-
 // Add new Todo
 todoRouter.post("/", (req, res, next) => {
   req.body.user = req.auth._id
@@ -40,7 +29,7 @@ todoRouter.post("/", (req, res, next) => {
 // Delete Todo
 todoRouter.delete("/:todoId", (req, res, next) => {
   Todo.findOneAndDelete(
-    { _id: req.params.todoId, user: req.auth._id },
+    { _id: req.params.todoId},
     (err, deletedTodo) => {
       if(err){
         res.status(500)
@@ -54,7 +43,7 @@ todoRouter.delete("/:todoId", (req, res, next) => {
 // Update Todo
 todoRouter.put("/:todoId", (req, res, next) => {
   Todo.findOneAndUpdate(
-    { _id: req.params.todoId, user: req.auth._id },
+    { _id: req.params.todoId, },
     req.body,
     { new: true },
     (err, updatedTodo) => {
